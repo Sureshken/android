@@ -20,7 +20,7 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed">
+  <project path="android" name="user/android" groups="pdk,tradefed">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
@@ -504,6 +504,13 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" remote="aosp" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
+  <project path="kernel/samsung/logan" name="Sureshken/kernel_source" remote="github" revision="n7.1.1" />
+  <project path="device/samsung/logan" name="Sureshken/logan_source" remote="github" revision="n7.1.1" />
+  <project path="device/samsung/logan-common" name="Sureshken/logan-common_source" remote="github" revision="n7.1.1" />
+  <project path="device/samsung" name="Sureshken/samsung" remote="github" revision="n7.1.1" />
+
+
+Read more: https://www.techlila.com/compile-android-rom-from-source-code/#ixzz4yh77BdDB
 
   <include name="snippets/cm.xml" />
 
